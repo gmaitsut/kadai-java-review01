@@ -17,8 +17,7 @@ public class Human extends Animal implements Thinkable {
 
     // 引数ありコンストラクタ
     public Human(String name, int age, String interest) {
-        super.setName(name);
-        super.setAge(age);
+        super(name, age);
         this.interest = interest;
   }
     public String getInterest(){
@@ -37,5 +36,6 @@ public class Human extends Animal implements Thinkable {
         System.out.println("私は" + interest +"について考えています。" );
 
     }
+
 
 }
